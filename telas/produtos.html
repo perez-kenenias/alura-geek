@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produtos | Alura Geek</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/cabecalho.css" />
+    <link rel="stylesheet" href="../assets/css/produtos.css" />
+    <link rel="stylesheet" href="../assets/css/produtos/produtos.css" />
+    <link rel="stylesheet" href="../assets/css/formulario.css" />
+    <link rel="stylesheet" href="../assets/css/cadastro-login.css" />
+    <link rel="stylesheet" href="../assets/css/rodape.css" />
+  </head>
+
+  <body>
+    <header class="cabecalho container">
+      <h1 class="cabecalho__logo">
+        <a href="../index.html">
+          <img
+            src="../assets/img/logo-alura-geek.svg"
+            alt="Logo da Alura Geek"
+            class="logo__imagem"
+          />
+        </a>
+      </h1>
+      <div class="cabecalho__search">
+        <input
+          type="text"
+          class="search__input"
+          placeholder="O que deseja encontrar?"
+        />
+        <button class="search__button"></button>
+      </div>
+    </header>
+
+    <main>
+      <section class="produtos container" data-produtos>
+        <div class="produtos__titulo">
+          <h3 class="titulo__texto" data-categoria></h3>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <section class="rodape__principal container">
+        <div class="rodape__alurageek">
+          <figure class="rodape__logo">
+            <img
+              src="../assets/img/logo-alura-geek.svg"
+              alt="Logo da Alura Geek"
+              class="logo__imagem"
+            />
+          </figure>
+          <nav class="rodape__navegacao">
+            <a href="#" class="navegacao__link">Politíca de privacidade</a>
+            <a href="#" class="navegacao__link">Programa fidelidade</a>
+            <a href="#" class="navegacao__link">Nossas lojas</a>
+            <a href="#" class="navegacao__link">Quem somos nós</a>
+            <a href="#" class="navegacao__link">Quero ser franqueado</a>
+            <a href="#" class="navegacao__link">Anuncie aqui</a>
+          </nav>
+        </div>
+
+        <form class="formulario">
+          <h4 class="formulario__titulo">Fale conosco</h4>
+          <div class="formulario__campo">
+            <label for="nome" class="formulario__label">Nome</label>
+            <input
+              type="text"
+              class="formulario__input"
+              id="nome"
+              maxlength="50"
+              data-formulario="nome"
+              required
+            />
+            <span class="mensagem__erro" data-erro></span>
+          </div>
+          <div class="formulario__campo">
+            <label for="mensagem" class="formulario__label">Mensagem</label>
+            <textarea
+              type="text"
+              class="formulario__input"
+              id="mensagem"
+              rows="2"
+              maxlength="300"
+              data-formulario="mensagem"
+              required
+            ></textarea>
+            <span class="mensagem__erro" data-erro></span>
+          </div>
+          <input
+            type="submit"
+            class="formulario__botao botao botao--azul"
+            id="enviar"
+            data-botao="submit"
+            value="Enviar mensagem"
+          />
+        </form>
+      </section>
+
+      <section class="rodape__desenvolvedor container">
+        <h5 class="desenvolvedor__titulo">Desenvolvido por Marcos Allan</h5>
+        <p class="desenvolvedor__ano">2022</p>
+      </section>
+    </footer>
+    <script src="../controller/todosProdutos.js" type="module"></script>
+  </body>
+</html>

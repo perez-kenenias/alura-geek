@@ -1,0 +1,56 @@
+.formulario__titulo {
+  color: var(--formulario-texto);
+  margin-top: 1rem;
+}
+
+.formulario__campo {
+  background-color: var(--branco-color);
+  border-radius: 4px;
+  box-shadow: 0 1px 0 0 #c8c8c8;
+  margin-bottom: .3rem;
+  margin-top: 1rem;
+  padding: 0.75rem 0.5rem;
+}
+
+.formulario__campo:has(.formulario__input:focus) {
+  border-bottom: 3px solid var(--azul-destaque);
+}
+
+.formulario__campo--invalido {
+  margin-bottom: 1.3rem;
+  margin-top: 1.2rem;
+  border-bottom: 3px solid var(--vermelho-input);
+}
+
+.formulario__label {
+  color: #a2a2a2;
+  font-size: 0.75rem;
+}
+
+.formulario__input {
+  border: none;
+  color: var(--formulario-texto);
+  display: flex;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 20px;
+  padding-top: 0.25rem;
+  width: 100%;
+}
+
+.formulario__input:focus {
+  outline: 0;
+}
+
+.formulario__botao {
+  margin-top: 0.5rem;
+  max-width: none;
+}
+
+.mensagem__erro {
+    position: absolute;
+    margin-top: 1.2rem;
+    color: var(--formulario-texto);
+    font-size: .8rem;
+    font-weight: 700;
+}

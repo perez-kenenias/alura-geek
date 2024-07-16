@@ -1,0 +1,76 @@
+.cabecalho {
+  background-color: var(--branco-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo__imagem {
+  width: 8rem;
+}
+
+.cabecalho__login {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.cabecalho__search {
+  order: 2;
+}
+
+.search__input {
+  display: none;
+}
+
+.search__input:focus {
+  outline: 0;
+}
+
+.search__button {
+  width: 1rem;
+  height: 1rem;
+  background: url(../../assets/img/lupa.svg) no-repeat center / cover;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .logo__imagem {
+    width: 10.625rem;
+  }
+
+  .cabecalho__search {
+    background-color: var(--cinza-cabecalho);
+    border-radius: 0.8rem;
+    padding: 0.75rem 1rem;
+    order: initial;
+  }
+
+  .search__input {
+    background-color: transparent;
+    border: none;
+    display: initial;
+    margin-right: 3.75rem;
+    opacity: 0.5;
+  }
+
+  .search__input:active {
+    border: none;
+  }
+
+  .search__button {
+    opacity: 0.5;
+  }
+
+  .cabecalho__login {
+    font-weight: 400;
+    font-size: 1rem;
+    width: 160px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .search__input {
+    margin-right: 11.3125rem;
+  }
+}

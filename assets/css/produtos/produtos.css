@@ -1,0 +1,20 @@
+.produtos__titulo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.produtos__titulo .botao {
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.8rem 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .produtos__titulo {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

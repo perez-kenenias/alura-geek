@@ -1,0 +1,62 @@
+.starWars-destaque.produtos {
+  padding-top: 0;
+  padding-inline: 0;
+}
+
+.card__item-destaque {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__imagem-destaque {
+  object-fit: cover center;
+  width: 100vw;
+  max-width: 370px;
+  margin: auto;
+  max-height: 150px;
+}
+
+.card_item-texto {
+  padding: 1rem;
+}
+
+.card__titulo-destaque {
+  color: var(--cinza-texto);
+  font-size: 1.375rem;
+  margin-bottom: 0.5rem;
+}
+
+.card__descricao-destaque {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--cinza-texto);
+}
+
+@media screen and (min-width: 768px) {
+  .starWars-destaque.produtos {
+    padding: 2rem;
+  }
+
+  .card__item-destaque {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .starWars-destaque.produtos {
+    padding: 4rem 9.5rem 0 9.5rem;
+  }
+
+  .card__titulo-destaque {
+    font-size: 3.25rem;
+  }
+
+  .card__imagem-destaque {
+    max-width: 600px;
+    max-height: 250px;
+  }
+
+  .card__item-destaque {
+    align-items: center;
+  }
+}

@@ -1,0 +1,144 @@
+.titulo__texto {
+  color: var(--cinza-texto);
+  font-size: 1.375rem;
+}
+
+.produtos__cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.categorias {
+  margin: 2rem 0;
+}
+
+.categorias:first-child {
+  margin-top: 0;
+}
+
+.categorias:last-child {
+  margin-bottom: 0;
+}
+
+.card__item {
+  position: relative;
+  width: 48%;
+  margin: 1%;
+}
+
+.card__imagem {
+  object-fit: cover;
+  width: 100%;
+  max-width: 200px;
+  min-height: 170px;
+  max-height: 180px;
+}
+
+.produtos__cards:has(.card__item:hover) .card__item:not(:hover) {
+  opacity: 0.8;
+  scale: .98;
+}
+
+.card__item:nth-child(n + 5) {
+  display: none;
+}
+
+.todos__produtos.card__item:nth-child(n + 5) {
+  display: block;
+}
+
+.card__titulo {
+  color: var(--cinza-texto);
+  font-size: 0.875rem;
+  margin: 0.5rem 0;
+}
+
+.card__preco {
+  color: var(--cinza-texto);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card__link {
+  color: var(--azul-destaque);
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.card__botao {
+  position: absolute;
+  border: none;
+  top: 1rem;
+  left: 4rem;
+  background-color: transparent;
+}
+
+.card-botao-caneta {
+  margin-left: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .produtos.container {
+    padding: 2rem;
+  }
+
+  .card__item {
+    width: 23%;
+    margin: 1%;
+  }
+
+  .card__imagem {
+    min-height: initial;
+    min-height: 190px;
+    max-height: 200px;
+  }
+
+  .card__botao {
+    left: 6rem;
+  }
+
+  .diversos:last-child {
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .produtos.container {
+    padding: 4rem 9.5rem;
+  }
+
+  .categorias {
+    margin: 4rem 0;
+  }
+
+  .titulo__texto {
+    font-size: 2rem;
+  }
+
+  .card__item {
+    width: 15%;
+    margin: 1%;
+  }
+
+  .card__item:nth-child(6n + 1) {
+    margin-left: 0;
+  }
+
+  .card__item:nth-child(6n) {
+    margin-right: 0;
+  }
+
+  .card__imagem {
+    min-height: 175px;
+    max-height: 170px;
+  }
+
+  .card__botao {
+    left: 5.5rem;
+  }
+
+  .produtos:last-child {
+    padding-bottom: 4rem;
+  }
+}

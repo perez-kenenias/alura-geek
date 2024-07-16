@@ -1,0 +1,40 @@
+.cadastro.container {
+  padding: 5.625rem 1rem;
+}
+
+.cadastro .formulario {
+  margin-left: 0;
+  text-align: center;
+}
+
+.cadastro .formulario__campo {
+  margin-inline: auto;
+  text-align: left;
+  position: relative;
+}
+
+.cadastro .formulario__botao {
+  margin-top: 1.7rem;
+}
+
+.rodape {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .cadastro .formulario__botao {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cadastro.container {
+    width: 40%;
+    margin: 0 auto;
+    padding: 5.625rem 1rem;
+  }
+
+  .cadastro .botao {
+    width: 100%;
+  }
+}

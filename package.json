@@ -1,0 +1,20 @@
+{
+  "name": "challenge-alura-geek",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\"> Challenge Alura Geek </h1>",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getmarcos/challenge-alura-geek.git"
+  },
+  "author": "Marcos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/getmarcos/challenge-alura-geek/issues"
+  },
+  "homepage": "https://github.com/getmarcos/challenge-alura-geek"
+}

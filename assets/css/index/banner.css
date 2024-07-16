@@ -1,0 +1,51 @@
+.banner {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%),
+    url(../../img/banner-image.png);
+  background-size: cover;
+  background-position: center;
+
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 4.875rem;
+}
+
+.banner__titulo {
+  font-size: 1.375rem;
+  margin-bottom: 0.5rem;
+}
+
+.banner__descricao {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.banner__button {
+  background-color: var(--azul-destaque);
+  color: #ffffff;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    padding-top: 10.0625rem;
+  }
+
+  .banner__titulo {
+    font-size: 3.25rem;
+    margin-top: 1rem;
+  }
+
+  .banner__descricao {
+    font-size: 1.375rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .banner {
+    padding-top: 9.375rem;
+  }
+}
